@@ -12,7 +12,7 @@ Acesso (**CódAcesso**)
 
 AcessoFuncionário (**CódAcessoFunc**, #CodAcesso, TipoConta, Usuário, Senha)
 
-AcEntrega(**#CódEntrega**, **#CódAcessoFunc**);
+AcEntrega(**#CódEntrega**, **#CódAcessoFunc**)
 
 HistóricoAcesso (**CódHistórico**, #CódAcesso, HoraDeEntrada, HoraDeSaída)
 
