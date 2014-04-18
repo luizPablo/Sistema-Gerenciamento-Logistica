@@ -1,12 +1,23 @@
-Produto (**CódProduto**, Peso, Volume, Descrição)
-Endereço (**CódEndereço**, #CódEntrega, Endereço)
-Requisição (**CódRequisição**, #CódEntrega, Descrição, Status)
-HistóricoAlteração (**CódAlteração**, #CódEntrega, Alteração)
-Entrega (**CódEntrega**, #CódProduto, HoraDeSaída, HoraDeChegada, Trajeto, QtProduto, Anotações)
-Acesso (**CódAcesso**)
-AcessoFuncionário (**CódAcessoFunc**, #CodAcesso, TipoConta, Usuário, Senha)
-AcEntrega(**#CódEntrega**, **#CódAcessoFunc**);
-HistóricoAcesso (**CódHistórico**, #CódAcesso, HoraDeEntrada, HoraDeSaída)
-Cliente (**CódCliente**, #CódAcesso, Nome, Usuário, Senha)
-Telefone (**Telefone**, #CódCliente)
-E-mail (**E-mail**, #CódCliente)
+Produto (**CÃ³dProduto**, Peso, Volume, DescriÃ§Ã£o)
+
+EndereÃ§o (**CÃ³dEndereÃ§o**, #CÃ³dEntrega, EndereÃ§o)
+
+RequisiÃ§Ã£o (**CÃ³dRequisiÃ§Ã£o**, #CÃ³dEntrega, DescriÃ§Ã£o, Status)
+
+HistÃ³ricoAlteraÃ§Ã£o (**CÃ³dAlteraÃ§Ã£o**, #CÃ³dEntrega, AlteraÃ§Ã£o)
+
+Entrega (**CÃ³dEntrega**, #CÃ³dProduto, HoraDeSaÃ­da, HoraDeChegada, Trajeto, QtProduto, AnotaÃ§Ãµes)
+
+Acesso (**CÃ³dAcesso**)
+
+AcessoFuncionÃ¡rio (**CÃ³dAcessoFunc**, #CodAcesso, TipoConta, UsuÃ¡rio, Senha)
+
+AcEntrega(**#CÃ³dEntrega**, **#CÃ³dAcessoFunc**)
+
+HistÃ³ricoAcesso (**CÃ³dHistÃ³rico**, #CÃ³dAcesso, HoraDeEntrada, HoraDeSaÃ­da)
+
+Cliente (**CÃ³dCliente**, #CÃ³dAcesso, Nome, UsuÃ¡rio, Senha)
+
+Telefone (**Telefone**, #CÃ³dCliente)
+
+E-mail (**E-mail**, #CÃ³dCliente)
