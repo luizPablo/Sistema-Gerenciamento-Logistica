@@ -7,24 +7,28 @@ CREATE TABLE produto(
 );
 
 CREATE TABLE endereco(
-	codendereco int,
-	codentrega int,
+	codendereco int not null,
+	codentrega int not null,
 	endereco varchar(100) not null,
 	primary key(codendereco),
 	foreign key(codentrega) references entrega(codentrega)
 );
 
 CREATE TABLE requisicao(
-	codrequisicao
-	codentrega
-	descricao
-	status
+	codrequisicao int not null,
+	codentrega int not null,
+	descricao varchar(500),
+	status varchar(500),
+	primary key(codrequisicao),
+	foreign key(codentrega) references entrega(codentrega)
 );
 
 CREATE TABLE historicoalteracao(
-	codalteracao
-	codentrega
-	alteracao
+	codalteracao int not null,
+	codentrega int not null,
+	alteracao varchar(500)
+	primary key (codalteracao),
+	foreign key(codentrega)  references entrega(codentrega)
 );
 
 CREATE TABLE entrega(
@@ -32,7 +36,7 @@ CREATE TABLE entrega(
 	codproduto int not null,
 	horadesaida	timestamp not null,
 	horadechegada timestamp,
-	trajeto int,
+	trajeto varchar(300),
 	qtproduto int not null,
 	anotacoes varchar(500),
 	primary key(codentrega),
@@ -40,15 +44,18 @@ CREATE TABLE entrega(
 );
 
 CREATE TABLE acesso(
-	codacesso
+	codacesso int not null,
+	primary key (codacesso),
+	
 );
 
 CREATE TABLE acesofuncionario(
-	codacessofunc
-	codacesso
-	tipoconta
-	usuario
-	senha
+	codacessofunc int not null,
+	codacesso int not null,
+	tipoconta char not null,
+	usuario varchar(50),
+	senha varchar(10),
+	primary key
 );
 
 CREATE TABLE acentrega(
