@@ -6,7 +6,7 @@ Requisição (**CódRequisição**, #CódEntrega, Descrição, Status)
 
 HistóricoAlteração (**CódAlteração**, #CódEntrega, Alteração)
 
-Entrega (**CódEntrega**, #CódProduto, HoraDeSaída, HoraDeChegada, Trajeto, QtProduto, Anotações)
+Entrega (**CódEntrega**, #CódProduto, #CódEndSaida, #CódEndEntrega, HoraDeSaída, HoraDeChegada, Trajeto, QtProduto, Anotações)
 
 Acesso (**CódAcesso**)
 
