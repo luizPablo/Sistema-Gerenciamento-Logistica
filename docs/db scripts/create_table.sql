@@ -8,10 +8,24 @@ CREATE TABLE produto(
 
 CREATE TABLE endereco(
 	codendereco int not null,
-	codentrega int not null,
 	endereco varchar(100) not null,
-	primary key(codendereco),
-	foreign key(codentrega) references entrega(codentrega)
+	primary key(codendereco)
+);
+
+CREATE TABLE entrega(
+	codentrega int not null,
+	codproduto int not null,
+	codendsaida int not null,
+	codendentrega int not null,
+	horadesaida	timestamp not null,
+	horadechegada timestamp,
+	trajeto varchar(300),
+	qtproduto int not null,
+	anotacoes varchar(500),
+	primary key(codentrega),
+	foreign key(codproduto) references produto(codproduto),
+	foreign key(codendsaida) references endereco(codendereco),
+	foreign key(codendentrega) references endereco(codendereco)
 );
 
 CREATE TABLE requisicao(
@@ -29,22 +43,6 @@ CREATE TABLE historicoalteracao(
 	alteracao varchar(500),
 	primary key (codalteracao),
 	foreign key(codentrega)  references entrega(codentrega)
-);
-
-CREATE TABLE entrega(
-	codentrega int not null,
-	codproduto int not null,
-	codendsaida int not null,
-	codendentrega int not null,
-	horadesaida	timestamp not null,
-	horadechegada timestamp,
-	trajeto varchar(300),
-	qtproduto int not null,
-	anotacoes varchar(500),
-	primary key(codentrega),
-	foreign key(codproduto) references produto(codproduto),
-	foreign key(codendsaida) references endereco(codendereco),
-	foreign key(codendentrega) references endereco(codendereco)
 );
 
 CREATE TABLE acesso(
@@ -65,7 +63,7 @@ CREATE TABLE acentrega(
 	codentrega int not null,
 	codacessofunc int not null,	
 	primary key(codentrega, codacessofunc),
-	foreign key(codhistorico) references acessofuncionario(codacessofunc),
+	foreign key(codacessofunc) references acessofuncionario(codacessofunc),
 	foreign key(codentrega) references entrega(codentrega)
 );
 
