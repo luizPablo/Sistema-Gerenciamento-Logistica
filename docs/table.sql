@@ -34,55 +34,70 @@ CREATE TABLE historicoalteracao(
 CREATE TABLE entrega(
 	codentrega int not null,
 	codproduto int not null,
+	codendsaida int not null,
+	codendentrega int not null,
 	horadesaida	timestamp not null,
 	horadechegada timestamp,
 	trajeto varchar(300),
 	qtproduto int not null,
 	anotacoes varchar(500),
 	primary key(codentrega),
-	foreign key(codproduto) references produto(codproduto)
+	foreign key(codproduto) references produto(codproduto),
+	foreign key(codendsaida) references endereco(codendereco),
+	foreign key(codendentrega) references endereco(codendereco)
 );
 
 CREATE TABLE acesso(
 	codacesso int not null,
-	primary key (codacesso)	
+	primary key (codacesso)
 );
 
-CREATE TABLE acesofuncionario(
+CREATE TABLE acessofuncionario(
 	codacessofunc int not null,
 	codacesso int not null,
 	tipoconta char not null,
 	usuario varchar(50),
 	senha varchar(10),
-	primary key
+	primary key(codacessofunc)
 );
 
 CREATE TABLE acentrega(
-	codhistorico
-	codacesso
+	codentrega int not null,
+	codacessofunc int not null,	
+	primary key(codentrega, codacessofunc),
+	foreign key(codhistorico) references acessofuncionario(codacessofunc),
+	foreign key(codentrega) references entrega(codentrega)
 );
 
 CREATE TABLE historicoacesso(
-	codhistorico
-	codacesso
-	horadeentrada
-	horadesaida
+	codhistorico int not null,
+	codacesso int not null,
+	horadeentrada int not null, 
+	horadesaida int,
+	primary key(codhistorico),
+	foreign key(codacesso) references acesso(codacesso)
 );
 
 CREATE TABLE cliente(
-	codcliente
-	codacesso
-	nome
-	usuario
-	senha
+	codcliente int not null,
+	codacesso int not null,
+	nome varchar(100) not null,
+	usuario varchar(50) not null,
+	senha varchar(50) not null,
+	primary key(codcliente),
+	foreign key(codacesso) references acesso(codacesso)
 );
 
 CREATE TABLE telefone(
-	telefone
-	codcliente
+	telefone int not null,
+	codcliente int not null,
+	primary key(telefone),
+	foreign key(codcliente) references cliente(codcliente)
 );
 
 CREATE TABLE email(
-	email
-	codcliente
+	email varchar(100) not null,
+	codcliente int not null,
+	primary key(email),
+	foreign key(codcliente) references cliente(codcliente)
 );
