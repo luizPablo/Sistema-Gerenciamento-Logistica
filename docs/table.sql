@@ -2,7 +2,7 @@ CREATE TABLE produto(
 	codproduto int not null,
 	peso decimal(12,4) not null,
 	volume decimal(12,4) not null,
-	descricao varchar(500)
+	descricao varchar(500),
 	primary key(codproduto)
 );
 
@@ -26,7 +26,7 @@ CREATE TABLE requisicao(
 CREATE TABLE historicoalteracao(
 	codalteracao int not null,
 	codentrega int not null,
-	alteracao varchar(500)
+	alteracao varchar(500),
 	primary key (codalteracao),
 	foreign key(codentrega)  references entrega(codentrega)
 );
@@ -45,8 +45,7 @@ CREATE TABLE entrega(
 
 CREATE TABLE acesso(
 	codacesso int not null,
-	primary key (codacesso),
-	
+	primary key (codacesso)	
 );
 
 CREATE TABLE acesofuncionario(
