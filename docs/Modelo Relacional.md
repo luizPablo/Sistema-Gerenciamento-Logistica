@@ -1,6 +1,6 @@
 Produto (**CódProduto**, Peso, Volume, Descrição)
 
-Endereço (**CódEndereço**, #CódEntrega, Endereço)
+Endereço (**CódEndereço**, Endereço)
 
 Requisição (**CódRequisição**, #CódEntrega, Descrição, Status)
 
