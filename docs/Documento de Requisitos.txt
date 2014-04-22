@@ -1,24 +1,18 @@
-
-	* Controle de cadastro
-	* 
-		* Criar cadastro de cliente
-		* Alterar cadastro de cliente
-		* Excluir acesso de cliente
-		* Visualizar cadastro de cliente
-		* Cadastro de funcionário
-		* Alterar cadastro de funcionário
-		* Excluir funcionário
-		* Visualizar cadastro de cliente
-		* Visualizar histórico de acesso de cliente
-
-	* Controle de entrega
-	* 
-		* Criar cadastro de entrega
-		* Alterar entrega
-		* Excluir entrega
-		* Visualizar entrega
-		* Gerar relatório de entrega
-		* Visualizar histórico de alteração de entrega
-		* Adicionar requisição
-
-
+- Controle de cadastro
+-- Criar cadastro de cliente
+-- Alterar cadastro de cliente
+-- Excluir acesso de cliente
+-- Visualizar cadastro de cliente
+-- Cadastro de funcionário
+-- Alterar cadastro de funcionário
+-- Excluir funcionário
+-- Visualizar cadastro de cliente
+-- Visualizar histórico de acesso de cliente
+- Controle de entrega
+-- Criar cadastro de entrega
+-- Alterar entrega
+-- Excluir entrega
+-- Visualizar entrega
+-- Gerar relatório de entrega
+-- Visualizar histórico de alteração de entrega
+-- Adicionar requisição
