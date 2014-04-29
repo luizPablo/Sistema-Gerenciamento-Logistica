@@ -23,4 +23,9 @@ Projeto de Engenharia de Software para a criação de um software de gerenciamen
 - [Modelo inicial](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/blob/master/docs/Modelo%20Relacional.md "Modelo Relacional.md")
 - [Modelo normalizado (3FN)](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/blob/master/docs/Modelo%20Relacional%20Normalizado.md "Modelo Relacional Normalizado.md")
 
+### Documento de planejamento
+
+- [Documento de plajeamento](https://docs.google.com/document/d/1HKZ4FkvAQvrDR4CnwQv9FIIsQt7KsBa_C6eHDCXT8lc/edit# "Documento de planejamento") 
+
+
 ### Implementação do Banco de Dados
