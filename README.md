@@ -8,12 +8,18 @@ Projeto de Engenharia de Software para a criação de um software de gerenciamen
 
 ### Documento de visão
 
-- [PDF](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/blob/master/Docs/Documento%20de%20Vis%C3%A3o.pdf "Documento de Visão.pdf")
-- [Documento do Word](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/blob/master/Docs/Documento%20de%20Vis%C3%A3o.docx "Documento de Visão.docx")
+- [PDF](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/blob/master/Docs/Documento%20de%20Vis%C3%A3o.pdf "Documento de visão")
+- [Documento do Word](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/blob/master/Docs/Documento%20de%20Vis%C3%A3o.docx "Documento de visão")
  
-- ### Documento de planejamento
+### Documento de planejamento
 
-- [Documento de plajeamento](https://docs.google.com/document/d/1HKZ4FkvAQvrDR4CnwQv9FIIsQt7KsBa_C6eHDCXT8lc/edit# "Documento de planejamento") 
+- [Google Drive](https://docs.google.com/document/d/1HKZ4FkvAQvrDR4CnwQv9FIIsQt7KsBa_C6eHDCXT8lc/edit# "Documento de planejamento") 
+
+
+### Documento de requisitos (em andamento)
+
+- [Wiki](https://github.com/DeepBlueMax/Sistema-Gerenciamento-Logistica/wiki/Documento-de-Requisitos "Documento de requisitos") 
+
 
 ## Banco de Dados
 
